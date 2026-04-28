@@ -1,0 +1,4 @@
+model,best_params,cv_accuracy_mean,cv_accuracy_std,cv_roc_auc_mean,cv_roc_auc_std
+random_forest,"{'model__max_depth': 20, 'model__min_samples_split': 2, 'model__n_estimators': 200}",0.9878935990533755,0.0015562541666204312,0.9980697475634368,0.0007005171694378872
+decision_tree,"{'model__max_depth': None, 'model__min_samples_split': 10}",0.9791998180713705,0.0013709914932073187,0.9854605141313808,0.0016996228997208202
+logistic_regression,{'model__C': 10.0},0.8138700786351134,0.005109692229173483,0.8774376095228582,0.005600160645279813

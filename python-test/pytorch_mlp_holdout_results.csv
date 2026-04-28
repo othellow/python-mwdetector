@@ -1,0 +1,2 @@
+model,accuracy,precision,recall,f1,roc_auc,tn,fp,fn,tp,best_params
+pytorch_mlp,0.9494868984756402,0.9586791147994468,0.9538964390159986,0.9562817970164698,0.9838393667015936,3985,239,268,5545,"{'hidden_dim': 128, 'learning_rate': 0.001, 'batch_size': 32, 'epochs': 30, 'dropout': 0.2}"

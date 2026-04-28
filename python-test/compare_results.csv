@@ -1,0 +1,5 @@
+model,model_file,preprocessor_file,accuracy,precision,recall,f1,tn,fp,fn,tp,confusion_matrix
+random_forest,models/random_forest.pkl,models/random_forest_preprocessor.pkl,0.9880442363255953,0.9896783072423877,0.9896783072423877,0.9896783072423877,4164,60,60,5753,"[[4164, 60], [60, 5753]]"
+decision_tree,models/decision_tree.pkl,models/preprocessor.pkl,0.981269303576766,0.9841625064555001,0.9834852915878204,0.9838237824815006,4132,92,96,5717,"[[4132, 92], [96, 5717]]"
+pytorch_mlp,models/pytorch_mlp.pt,models/preprocessor.pkl,0.9469961143768059,0.9523727942436183,0.9563048339927748,0.9543347639484978,3946,278,254,5559,"[[3946, 278], [254, 5559]]"
+logistic_regression,models/logistic_regression.pkl,models/preprocessor.pkl,0.8105011457606854,0.8617946345975949,0.8013074144159642,0.8304510607951506,3477,747,1155,4658,"[[3477, 747], [1155, 4658]]"

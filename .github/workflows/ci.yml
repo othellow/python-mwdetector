@@ -34,4 +34,15 @@ jobs:
       run: |
         export PYTHONPATH=.
         pytest -v
-        
+
+    - name: Trigger Render Deploy
+      if: success()
+      run: |
+        curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
+
+    - name: Wait for deployment
+      run: sleep 20
+
+    - name: Smoke test (health endpoint)
+      run: |
+        curl -f https://mwdetector-app.onrender.com/health

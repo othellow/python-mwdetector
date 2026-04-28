@@ -24,3 +24,23 @@ def test_model_prediction():
     assert isinstance(result, dict)
     assert "prediction" in result
     assert "confidence" in result
+
+def test_empty_input():
+    """
+    Model should handle empty input safely
+    """
+    result = predict_malware({})
+    assert isinstance(result, dict)
+    assert "prediction" in result
+    assert "confidence" in result
+
+
+def test_invalid_input_types():
+    """
+    Model should not crash on invalid types
+    """
+    bad_input = {"feature1": "invalid"}
+    result = predict_malware(bad_input)
+
+    assert isinstance(result, dict)
+    assert "prediction" in result

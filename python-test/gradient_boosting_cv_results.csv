@@ -1,0 +1,4 @@
+model,best_params,cv_accuracy_mean,cv_accuracy_std,cv_roc_auc_mean,cv_roc_auc_std
+lightgbm,"{'model__learning_rate': 0.1, 'model__n_estimators': 200, 'model__num_leaves': 63}",0.9884914629432107,0.0012688010285055293,0.9984420981704438,0.00041002667090410416
+xgboost,"{'model__learning_rate': 0.1, 'model__max_depth': 6, 'model__n_estimators': 200}",0.9855520683833232,0.002130694601654126,0.9978507492547346,0.000550324663945102
+catboost,"{'model__depth': 6, 'model__iterations': 200, 'model__learning_rate': 0.1}",0.9805699603070449,0.0024174695728983726,0.9966344313970685,0.0005105592214735707
