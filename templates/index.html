@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Python MWDetector</title>
+</head>
+
+<body>
+    <h1>Malware Detection Web App</h1>
+    <p>LightGBM Champion Model Ready for Manual & Batch Prediction</p>
+
+    <form action="/predict-form" method="post">
+        <label>Feature 1:</label>
+        <input type="number" step="any" name="f1" value="0"><br><br>
+
+        <label>Feature 2:</label>
+        <input type="number" step="any" name="f2" value="0"><br><br>
+
+        <label>Feature 3:</label>
+        <input type="number" step="any" name="f3" value="0"><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <hr>
+
+    <h2>Batch CSV Upload</h2>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">Upload CSV</button>
+    </form>
+
+</body>
+
+</html>

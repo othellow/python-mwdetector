@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Evaluation Metrics</title>
+</head>
+
+<body>
+    <h1>Model Evaluation Results</h1>
+
+    <p><strong>Accuracy:</strong> {{ accuracy }}</p>
+    <p><strong>ROC-AUC:</strong> {{ auc }}</p>
+
+    <h2>Confusion Matrix</h2>
+    {{ matrix|safe }}
+
+    <br><br>
+    <a href="/">Back Home</a>
+</body>
+
+</html>
