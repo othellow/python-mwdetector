@@ -6,3 +6,6 @@ uploads/*
 !uploads/.gitkeep
 *.log
 model/malwareproj.csv
+python-test/data/*.csv
+python-test/*.csv
+python-test/data/*.csv
