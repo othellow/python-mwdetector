@@ -22,8 +22,8 @@ The dataset consists of structured features extracted from executable files.
 - Handled missing values appropriately
 - Ensured consistent feature schema across training and inference
 - Split dataset into:
-  - Training set (for cross-validation and tuning)
-  - Hold-out test set (for final evaluation)
+  - 80% Training set (for cross-validation and tuning)
+  - 20% Hold-out test set (for final evaluation)
 - Folder /python-test holds all previous model training and evaluation
 
 ---
